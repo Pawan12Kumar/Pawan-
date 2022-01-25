@@ -1,0 +1,273 @@
+body
+{ 
+	margin: 0;
+	padding: 0;
+}
+
+
+#setform
+{ 
+   margin-right: 30px;
+}
+
+#namefont
+{
+	margin-left: 10px;
+	font-size: 25px;
+	color: lightblue;
+}
+
+#homeset
+{
+	margin-left: 60px;
+}
+
+#button
+{
+	margin-left: 35%;
+}
+
+#button1
+{
+	margin-left: 35%;
+}
+
+#button2
+{
+	margin-left: 35%;
+
+}
+
+#likethis
+{
+    color: grey;
+    font-size: 30px;
+    margin-left: 35%;
+}
+
+#asd
+{
+	transition: 1s linear;
+}
+
+#asd:hover{
+	transform: rotateY(180deg);
+}
+#icon1
+{
+
+	margin-left: 5%;
+	transition: 1s linear;
+    
+}
+
+#icon1:hover{
+	transform: rotateY(180deg);
+}
+
+#icon2
+{
+	margin-left: 17%;
+	transition: 1s linear;
+
+}
+
+#icon2:hover{
+	transform: rotateY(180deg);
+}
+
+#icon3
+{
+	
+	margin-left: 17%;
+	transition: 1s linear;
+}
+
+#icon3:hover{
+	transform: rotateY(180deg);
+}
+
+#icon4
+{
+	float: right;
+	margin-right: 6%;
+	transition: 1s linear;
+}
+
+#icon4:hover{
+	transform: rotateY(180deg);
+}
+
+.line1
+{
+    margin-left: 10%;
+}
+
+.line11
+{
+	margin-left: 12%;
+    text-align: justify;
+    font-size: 15px;
+    color: grey;
+    width: 60%;
+}
+
+.line2
+{
+	margin-left: 24%;
+}
+
+.line22
+{
+	margin-left: 20%;
+    text-align: justify;
+    font-size: 15px;
+    color: grey;
+    width: 60%;
+}
+
+.line3
+{
+	margin-left: 17%;
+}
+
+.line33
+{
+	margin-left: 26%;
+    text-align: justify;
+    font-size: 15px;
+    color: grey;
+    width: 60%;
+}
+
+.line4
+{
+	float: right;
+	margin-right: 10%;
+}
+
+.line44
+{
+	float: right;
+	margin-right: 10%;
+    text-align: justify;
+    font-size: 15px;
+    color: grey;
+    width: 60%;
+}
+
+.setcolor
+{
+	background-color: aliceblue;
+	height: 600px;
+
+}
+
+#onlimg
+{
+	background-image: url(images/part3onl.jpg);
+	height: 400px;
+	width: 45%;
+	background-repeat: no-repeat;
+	margin-top: 7%;
+	margin-left: 5%;
+}
+
+#stu1
+{
+	margin-top: 10%;
+	margin-left: 18%;
+}
+
+#stu2
+{
+	margin-top: 3%;
+    margin-left: 18%; 
+}
+
+.learnsetcolor
+{
+    
+	height: 600px;
+}
+
+.setbackground
+{
+	background-color: lavender;
+	height: 500px;
+}
+
+#study
+{
+	background-image: url(images/study.jpg);
+	height: 450px;
+	width: 40%;
+	background-repeat: no-repeat;
+	margin-top: 13%;
+	margin-left: 10%;
+}
+
+
+.page1
+{
+	margin-top: 85%;
+}
+
+    li {list-style: none;}
+	li a{display: block;
+	     text-decoration: none;
+	     font-size: 15px;
+	     color: white;
+	     }
+
+    li a:hover{
+	    	color: white;
+
+           }
+
+.page2
+ {
+ 	margin-top: 74%;
+ }  
+
+ .page3
+ {
+ 	margin-top: 34%;
+ }
+
+ .b
+{
+	padding-top: 0.5rem !important;
+	padding-bottom: 0.5rem !important;
+	
+
+	}
+
+.header{
+	padding-bottom: 2rem;
+	padding-top: 2rem;
+	transition: padding-top .3s,padding-bottom.3s;
+}
+
+.gobtn
+{
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+}
+
+.gobtn:hover{
+	    	color: white;
+
+           }
+
+.buttonon
+{
+	float: right;
+	margin-right: 14%;
+} 
+
+#btnf1  :hover{
+	    	color: white;
+
+           }        

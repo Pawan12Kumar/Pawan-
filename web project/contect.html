@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <link  href="bootstrap-3.3.7-dist\css\bootstrap.min.css" rel="StyleSheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<style type="text/css">
+
+.jumbotron
+{
+    background: #0080ff;
+    color: lightblue;
+    border-radius: 0px;
+}
+
+.jumbotron-sm
+{
+    padding-top: 24px;
+    padding-bottom: 24px; }
+
+.jumbotron small 
+{
+   color: lightblue;
+}
+
+.h1 small 
+{
+   font-size: 24px;
+}
+
+ .a
+{
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+    
+}
+
+.dropdown:hover>.dropdown-menu
+        {   
+            display: block;   
+        }
+        
+        
+        #dropdown-item:hover
+        {
+            color: white;
+            background-color: blue;
+        }
+
+        #dropdown-item
+        {
+            height: 35px;
+        
+
+        }
+
+</style>
+
+
+<script>
+
+        
+$(document).ready(function(){
+
+        $(window).scroll(function(){
+
+        var scrl = $(window).scrollTop();
+        if(scrl>100)
+            {
+
+                $("#z").addClass("a");
+            }
+                else
+            {
+                $("#z").removeClass("a");
+            }
+
+        });
+    });
+       
+        
+        
+
+    </script>
+
+</head>
+
+<body>
+       <section class="navbar">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="navbar navbar-inverse navbar-fixed-top header" id="z">
+                    <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target="#abc">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                    </button>
+                        <div class="navbar-brand" id="namefont">
+                            
+                                <p style="font-size: 20px; margin-left: ;"><i><b>FoR LarNerS</b></i></p><img src="images/logo31.png" alt="" width="120" height="50" style="margin-top: -36%; margin-left: 80%;">
+                        </div>
+                    </div>
+
+                    <div class="navbar-collapse" id="abc">
+                        <ul class="nav navbar-nav" id="homeset">
+                            <li><a href="index1.html"><span class="glyphicon glyphicon-home"></span> <b>Home</b></a></li>
+                            
+                            <li><a href="about.html"><span class="glyphicon glyphicon-phone"></span> <b>About us</b></a></li>
+
+                            <li><a href="contect.html"><span class="glyphicon glyphicon-earphone"></span> <b>Contact us</b></a></li>
+
+                            <li class="dropdown"><a href="#" data-toggle="dropdown"> 
+                                <span class="glyphicon glyphicon-book"></span> <b>Courses</b> <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a id="dropdown-item" href="#"data-toggle="modal" data-target="#xyz">  Java Learn</a></li>
+                                    
+                                    <li><a id="dropdown-item" href="#" data-toggle="modal" data-target="#xyz">PHP Learn</a></li>
+
+                                    
+                                    <li><a id="dropdown-item" href="#" data-toggle="modal" data-target="#xyz">PHP core</a></li>
+                                    
+                                    <li><a id="dropdown-item" href="#" data-toggle="modal" data-target="#xyz">Dot Net</a></li>
+                                    
+                                    <li><a id="dropdown-item" href="#" data-toggle="modal" data-target="#xyz">Master computer</a></li>
+                                    
+                                    <li><a id="dropdown-item" href="#" data-toggle="modal" data-target="#xyz">Web Development</a></li>
+                                    
+                                    <li><a id="dropdown-item" href="#" data-toggle="modal" data-target="#xyz">Mechine Learning</a></li>
+                                    
+                                    <li><a id="dropdown-item" href="#" data-toggle="modal" data-target="#xyz">Python</a></li>
+                                    
+                                    <li><a id="dropdown-item" href="#" data-toggle="modal" data-target="#xyz">stack developer</a></li>
+                                    
+                                    <li><a id="dropdown-item" href="#" data-toggle="modal" data-target="#xyz">Achive for Educator</a></li> 
+
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right" id="setform">
+                            <li><a href="#" data-toggle="modal" data-target="#xyz"><span class="glyphicon glyphicon-log-in"></span> <b>L<i>ogin</i></b></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#cvb"><span class="glyphicon glyphicon-log-out"></span> <b>S<i>ign up</i></b></i></a></li>
+                        </ul>
+                        <div class="navbar-form navbar-right">
+                            <input type="Search" placeholder="Search, Cources" class="form-control">
+                        </div>
+
+                    </div>
+                </div>
+
+                <br>
+            <br>
+            <!--Navbar-->
+            <!--Modal-->
+               <div class="modal" id="xyz" style="background-color: #17a2b8;; width: 100%;">
+                    <div class="modal-dialog"  style="margin-top: 10%; width: 35%; ">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <a href="#" class="close" data-dismiss="modal">&times</a>
+                                <h1>Login Form</h1>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input type="User Name" id="t1" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>Password</label>
+                                    <input type="Password" id="t2" name="" class="form-control">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <input class="btn btn-primary" type="button" name="" value="log in" onclick="x();" style="background-color: blue;
+                                color: white; font-size: 15px;">
+                            </div>
+                        </div>
+                    </div>  
+                </div>      
+            <!--Modal-->
+            <!--Modal-->
+               <div class="modal" id="cvb" style="background-color: #17a2b8; width: 100%;">
+                    <div class="modal-dialog" style="margin-top: 10%; height:500px; width: 30%; ">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <a href="#" class="close" data-dismiss="modal">&times</a>
+                                <h1>signup form</h1>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input type="email" id="t1" name="" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>Password</label>
+                                    <input type="password" id="t2" name="" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>Confirm passward</label>
+                                    <input type="Confirm passward" id="t2" name="" class="form-control">
+                            </div>
+                            <div class="modal-footer">
+                                <input class="btn btn-primary" type="button" name="" value="sign up" onclick="x();" style="background-color: blue;
+                                color: white; font-size: 15px;">
+                            </div>
+                        </div>
+                    </div>  
+                </div>      
+            <!--Modal-->
+        </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+    <div class="jumbotron jumbotron-sm">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-12">
+                <h1 class="h1">
+                    Contact us <small>Achive Goal</small></h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8" style="width: 60%; margin-left: 20%;">
+            <div class="well well-sm">
+                <form>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">
+                                Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">
+                                Email Address</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                </span>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" /></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">
+                                Subject</label>
+                            <select id="subject" name="subject" class="form-control" required="required">
+                                <option value="na" selected="">Choose One:</option>
+                                <option value="service">General Customer Service</option>
+                                <option value="suggestions">Suggestions</option>
+                                <option value="product">Product Support</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">
+                                Message</label>
+                            <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
+                                placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+                            Send Message</button>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<section class="lastpart">
+    <div class="container-fluid" style="background-color: #0f52ba ; height: auto;">
+        <div  class="container">
+            <div class="row">
+                <div class="col-md-4" style="font-size: 20px; text-align: justify; color: white;
+                margin-top: 10%;">
+                    <p>Our mission is to provide a free, world-class
+                    <br>
+                     education to anyone, anywhere.</p>
+                     <br>
+
+                    <p><b>ACHIVE GOAL</b> is a 501(c)(3) nonprofit <br>
+                    organization. Donate or volunteer today!</p>
+                </div>
+            <div class="col-md-2" style="width: 15%;">
+            
+            <ul class="page1">
+                <li><a href="about.html"><b>About</b></a></li>
+                <br>
+                <li><a href="#">new</a></li>
+                <br>
+                <li><a href="#">impact</a></li>
+                <br>
+                <li><a href="#">our team</a></li>
+                <br>
+                <li><a href="#">our interns</a></li>
+                <br>
+                <li><a href="#">our content</a></li>
+                <br>
+                <li><a href="#">our leadership</a></li>
+                <br>
+                <li><a href="#">our supporters</a></li>
+                <br>
+                <li><a href="#">our contributors</a></li>
+                <br>
+                <li><a href="#">our finances</a></li>
+                <br>
+                <li><a href="#">careers</a></li>
+                <br>
+                <li><a href="#">interships</a></li>
+
+            </ul>
+                </div>
+
+            <div class="col-md-2">
+                <ul class="page2">
+                <li style="color: lightgrey;"><b>contact</b></li>
+                <br>
+                <li><a href="#">Help center</a></li>
+                <br>
+                <li><a href="#">supportcommunity</a></li>
+                <br>
+                <li><a href="#">share your story</a></li>
+                <br>
+                <li><a href="#">press</a></li>
+                <br>
+                <br>
+                <br>
+                <li style="color: lightgrey;">Download our apps</li>
+                <br>
+                <li><a href="#">IOS app</a></li>
+                <br>
+                <li><a href="#">Android app</a></li>
+                <br>
+                
+            </ul>
+            </div>
+
+            <div class="col-md-4">
+                <ul class="page3">
+                <li style="color: lightgrey;"><b>courses</b></li>
+                <br>
+                <li><a href="#">Math</a></li>
+                <br>
+                <li><a href="#">Math by grade</a></li>
+                <br>
+                <li><a href="#">learn Hindi(new></a></li>
+                <br>
+                <li><a href="#">Science-india</a></li>
+                <br>
+                <li><a href="#">Science&Engineering</a></li>
+                <br>
+                <li><a href="#">Computing</a></li>
+                <br>
+                <li><a href="#">Art&huminities</a></li>
+                <br>
+                <li><a href="#">Economics&finace</a></li>
+                <br>
+                <li><a href="#">Test prep</a></li>
+                <br>
+                <li><a href="#">Achive for Educator</a></li>
+                
+                
+            </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="language">
+        <form>
+            <label style="color: lightgrey; font-size: 15px; margin-left: 11.90%;">Language</label>
+        
+    
+        <select style="border-color: blue; border-radius: 2px; background-color: lightgrey;">
+        <option disabled="" value="none">View Achive Goal in:</option>
+        <option value="id" lang="id">Bahasa Indonesia</option>
+        <option value="cs" lang="cs">čeština</option>
+        <option value="da" lang="da">dansk</option>
+        <option value="de" lang="de">Deutsch</option>
+        <option value="en" lang="en">English</option>
+        <option value="es" lang="es">español</option>
+        <option value="fr" lang="fr">français</option>
+        <option value="it" lang="it">italiano</option>
+        <option value="hu" lang="hu">magyar</option>
+        <option value="nl" lang="nl">Nederlands</option>
+        <option value="nb" lang="nb">norsk bokmål</option>
+        <option value="uz" lang="uz">Oʻzbek</option>
+        <option value="pl" lang="pl">polski</option>
+        <option value="pt" lang="pt">português</option>
+        <option value="pt-pt" lang="pt-pt">português (Portugal)</option>
+        <option value="sv" lang="sv">svenska</option>
+        <option value="tr" lang="tr">Türkçe</option>
+        <option value="bg" lang="bg">български</option>
+        <option value="mn" lang="mn">монгол</option>
+        <option value="ru" lang="ru">русский</option>
+        <option value="sr" lang="sr">Српски</option>
+        <option value="ka" lang="ka">ქართული</option>
+        <option value="hy" lang="hy">հայերեն</option>
+        <option value="he" lang="he">עברית</option>
+        <option value="ar" lang="ar">العربية</option>
+        <option value="hi" lang="hi">हिन्दी</option>
+        <option value="bn" lang="bn">বাংলা</option>
+        <option value="gu" lang="gu">ગુજરાતી</option>
+        <option value="ta" lang="ta">தமிழ்</option>
+        <option value="kn" lang="kn">ಕನ್ನಡ</option>
+        <option value="ko" lang="ko">한국어</option>
+        <option value="zh-hans" lang="zh-hans">中文 (简体中文)</option>
+        <option value="ja" lang="ja">日本語</option>
+
+    </select>
+    
+        
+     <a href="#" class="gobtn" style="margin-left: 0.7%;"><span>Go</span></a>
+     </div>
+
+ </form>
+<section class="con">
+ <div class="country">
+    <div class="cont1">
+        <span style="color: lightgrey; font-size: 15px; margin-left: 11.90%;"><b>Country</b></span>
+        <a href="#"  style="color: white; margin-left: 0.5%;"><img  src="https://cdn.kastatic.org/images/country-flag-icons/us-flag.png" alt="">U.S.</a>
+        <a href="#" style="color: white; margin-left: 0.5%;"><img  src="https://cdn.kastatic.org/images/country-flag-icons/india-flag.png" alt="">India</a>
+        <a href="#" style="color: white; margin-left: 0.5%;"><img  src="https://cdn.kastatic.org/images/country-flag-icons/mexico-flag.png" alt="">Mexico</a>
+        <a href="#" style="color: white; margin-left: 0.5%;"><img  src="https://cdn.kastatic.org/images/country-flag-icons/brazil-flag.png" alt="">Brazil</a>
+    </div>
+ </div>
+</section>
+
+  
+  <hr color="white" style="width: 76%;">
+  <div class="as">
+    
+    <div style="color: lightgrey; margin-left: 11.90%;">© 2019 achivegoal
+    <span><a tabindex="0" href="#" style="color: white; margin-left: 1%;">Terms of use</a></span>
+    <span><a tabindex="0" href="#" style="color: white; margin-left: 1%;">Privacy Policy</a></span>
+    <div class="buttonon">
+    <a  href="#" aria-label="Follow us on Facebook" style="color: lightgrey;" id="btnf1"><svg role="img" aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 15 15"><path fill="currentColor" d="M14.172 0H.827A.827.827 0 0 0 0 .828v13.344c0 .458.37.828.828.828h7.184V9.19H6.057V6.925h1.955v-1.67c0-1.938 1.183-2.992 2.913-2.992.827 0 1.54.062 1.747.09v2.025h-1.197c-.94 0-1.123.447-1.123 1.102v1.445h2.243L12.3 9.19h-1.95V15h3.822c.458 0 .828-.37.828-.828V.827A.827.827 0 0 0 14.172 0z"></path></svg></a>
+    <a href="#" aria-label="Follow us on Twitter" style="color: lightgrey;" id="btnf1"><svg role="img" aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 20 20"><path fill="currentColor" d="M18.895 0H1.105C.495 0 0 .495 0 1.105V18.9c0 .605.495 1.1 1.105 1.1H18.9c.61 0 1.105-.495 1.105-1.105V1.105A1.113 1.113 0 0 0 18.895 0zM14.97 7.455c.005.11.005.22.005.33 0 3.385-2.58 7.295-7.295 7.295a7.293 7.293 0 0 1-3.925-1.145A5.142 5.142 0 0 0 7.55 12.87a2.564 2.564 0 0 1-2.395-1.78c.155.03.315.045.48.045.235 0 .46-.03.675-.09A2.57 2.57 0 0 1 4.255 8.53v-.035c.345.19.74.305 1.16.32A2.57 2.57 0 0 1 4.62 5.39a7.28 7.28 0 0 0 5.285 2.68 2.567 2.567 0 0 1 2.5-3.15c.735 0 1.4.31 1.87.81a5.1 5.1 0 0 0 1.63-.62 2.58 2.58 0 0 1-1.13 1.42c.52-.065 1.015-.2 1.475-.405-.345.515-.78.97-1.28 1.33z"></path></svg></a>
+    <a href="#" aria-label="Follow us on Instagram" style="color: lightgrey;" id="btnf1"><svg role="img" aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M18.24,7.28a2.67,2.67,0,0,0-1.52-1.52,4.33,4.33,0,0,0-1.49-.27c-.84,0-1.09,0-3.23,0s-2.39,0-3.23,0a4.33,4.33,0,0,0-1.49.27A2.67,2.67,0,0,0,5.76,7.28a4.33,4.33,0,0,0-.27,1.49c0,.84,0,1.09,0,3.23s0,2.39,0,3.23a4.33,4.33,0,0,0,.27,1.49,2.67,2.67,0,0,0,1.52,1.52,4.33,4.33,0,0,0,1.49.27c.84,0,1.09,0,3.23,0s2.39,0,3.23,0a4.33,4.33,0,0,0,1.49-.27,2.67,2.67,0,0,0,1.52-1.52,4.33,4.33,0,0,0,.27-1.49c0-.84,0-1.09,0-3.23s0-2.39,0-3.23A4.33,4.33,0,0,0,18.24,7.28ZM12,16.11A4.11,4.11,0,1,1,16.11,12,4.11,4.11,0,0,1,12,16.11Zm4.27-7.42a1,1,0,1,1,1-1A1,1,0,0,1,16.27,8.69Z M12,9.33A2.67,2.67,0,1,0,14.67,12,2.68,2.68,0,0,0,12,9.33Z M22,0H2A2,2,0,0,0,0,2V22a2,2,0,0,0,2,2H22a2,2,0,0,0,2-2V2A2,2,0,0,0,22,0ZM20,15.3a5.85,5.85,0,0,1-.37,1.94,4,4,0,0,1-2.34,2.34A5.85,5.85,0,0,1,15.3,20c-.85,0-1.13.05-3.3.05S9.55,20,8.7,20a5.85,5.85,0,0,1-1.94-.37,4,4,0,0,1-2.34-2.34,5.85,5.85,0,0,1-.37-1.94c0-.85,0-1.13,0-3.3s0-2.45,0-3.3a5.85,5.85,0,0,1,.37-1.94A4,4,0,0,1,6.76,4.42,5.85,5.85,0,0,1,8.7,4.05C9.55,4,9.83,4,12,4s2.45,0,3.3,0a5.85,5.85,0,0,1,1.94.37,4,4,0,0,1,2.34,2.34A5.85,5.85,0,0,1,20,8.7c0,.85.05,1.13.05,3.3S20,14.45,20,15.3Z"></path></svg></a></div>
+
+    </div>
+
+
+  </div>
+
+
+
+</div>
+</div>
+
+
+    
+    
+</section>
+
+
+</body>
+</html>
+
+
+
+
+
+
+

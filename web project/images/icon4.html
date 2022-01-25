@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<!-- saved from url=(0085)https://www.vectorstock.com/royalty-free-vector/graduate-or-professor-vector-14151452 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="csrf-name" content="csrf5df865e47fda0">
+	<meta name="csrf-value" content="b41be6a8240c170a4d2263c33eb437c3">
+<script type="text/javascript" src="./icon4_files/02e09611df"></script><script src="./icon4_files/nr-1153.min.js.download"></script><script type="text/javascript" async="" src="./icon4_files/linkid.js.download"></script><script async="" src="./icon4_files/analytics.js.download"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"02e09611df",applicationID:"156179534"};window.NREUM||(NREUM={}),__nr_require=function(n,e,t){function r(t){if(!e[t]){var i=e[t]={exports:{}};n[t][0].call(i.exports,function(e){var i=n[t][1][e];return r(i||e)},i,i.exports)}return e[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(n,e,t){function r(){}function i(n,e,t){return function(){return o(n,[u.now()].concat(f(arguments)),e?null:this,t),e?void 0:this}}var o=n("handle"),a=n(4),f=n(5),c=n("ee").get("tracer"),u=n("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(n,e){s[e]=i(d+e,!0,"api")}),s.addPageAction=i(d+"addPageAction",!0),s.setCurrentRouteName=i(d+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(n,e){var t={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),n,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return e.apply(this,arguments)}catch(n){throw c.emit("fn-err",[arguments,this,n],t),n}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(n,e){m[e]=i(l+e)}),newrelic.noticeError=function(n,e){"string"==typeof n&&(n=new Error(n)),o("err",[n,u.now(),!1,e])}},{}],2:[function(n,e,t){function r(n,e){var t=n.getEntries();t.forEach(function(n){"first-paint"===n.name?a("timing",["fp",Math.floor(n.startTime)]):"first-contentful-paint"===n.name&&a("timing",["fcp",Math.floor(n.startTime)])})}function i(n){if(n instanceof c&&!s){var e,t=Math.round(n.timeStamp);e=t>1e12?Date.now()-t:f.now()-t,s=!0,a("timing",["fi",t,{type:n.type,fid:e}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var o,a=n("handle"),f=n("loader"),c=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){o=new PerformanceObserver(r);try{o.observe({entryTypes:["paint"]})}catch(u){}}if("addEventListener"in document){var s=!1,p=["click","keydown","mousedown","pointerdown","touchstart"];p.forEach(function(n){document.addEventListener(n,i,!1)})}}},{}],3:[function(n,e,t){function r(n,e){if(!i)return!1;if(n!==i)return!1;if(!e)return!0;if(!o)return!1;for(var t=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],4:[function(n,e,t){function r(n,e){var t=[],r="",o=0;for(r in n)i.call(n,r)&&(t[o]=e(r,n[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],5:[function(n,e,t){function r(n,e,t){e||(e=0),"undefined"==typeof t&&(t=n?n.length:0);for(var r=-1,i=t-e||0,o=Array(i<0?0:i);++r<i;)o[r]=n[e+r];return o}e.exports=r},{}],6:[function(n,e,t){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(n,e,t){function r(){}function i(n){function e(n){return n&&n instanceof r?n:n?c(n,f,o):o()}function t(t,r,i,o){if(!d.aborted||o){n&&n(t,r,i);for(var a=e(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(n,e){h[n]=v(n).concat(e)}function m(n,e){var t=h[n];if(t)for(var r=0;r<t.length;r++)t[r]===e&&t.splice(r,1)}function v(n){return h[n]||[]}function g(n){return p[n]=p[n]||i(t)}function w(n,e){u(n,function(n,t){e=e||"feature",y[t]=e,e in s||(s[e]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:e,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var f="nr@context",c=n("gos"),u=n(4),s={},p={},d=e.exports=i();d.backlog=s},{}],gos:[function(n,e,t){function r(n,e,t){if(i.call(n,e))return n[e];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(n,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return n[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(n,e,t){function r(n,e,t,r){i.buffer([n],r),i.emit(n,e,t)}var i=n("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(n,e,t){function r(n){var e=typeof n;return!n||"object"!==e&&"function"!==e?-1:n===window?0:a(n,o,function(){return i++})}var i=1,o="nr@id",a=n("gos");e.exports=r},{}],loader:[function(n,e,t){function r(){if(!x++){var n=E.info=NREUM.info,e=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(n&&n.licenseKey&&n.applicationID&&e))return s.abort();u(y,function(e,t){n[e]||(n[e]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=l.createElement("script");t.src="https://"+n.agent,e.parentNode.insertBefore(t,e)}}function i(){"complete"===l.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=n("handle"),u=n(4),s=n("ee"),p=n(3),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1153.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=e.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};n(1),n(2),l[m]?(l[m]("DOMContentLoaded",o,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",i),d[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=n(6)},{}],"wrap-function":[function(n,e,t){function r(n){return!(n&&n instanceof Function&&n.apply&&!n[a])}var i=n("ee"),o=n(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;e.exports=function(n,e){function t(n,e,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){d([u,"",[r,a,i],f])}s(e+"start",[r,a,i],f);try{return c=n.apply(a,r)}catch(p){throw s(e+"err",[r,a,p],f),p}finally{s(e+"end",[r,a,c],f)}}return r(n)?n:(e||(e=""),nrWrapper[a]=n,p(n,nrWrapper),nrWrapper)}function u(n,e,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<e.length;c++)f=e[c],a=n[f],r(a)||(n[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||e){var o=c;c=!0;try{n.emit(t,r,i,e)}catch(a){d([a,t,r,i])}c=o}}function p(n,e){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(n);return t.forEach(function(t){Object.defineProperty(e,t,{get:function(){return n[t]},set:function(e){return n[t]=e,e}})}),e}catch(r){d([r])}for(var i in n)f.call(n,i)&&(e[i]=n[i]);return e}function d(e){try{n.emit("internal-error",e)}catch(t){}}return n||(n=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>	<meta name="cart-hash" content="d751713988987e9331980363e24189ce">
+	<link rel="dns-prefetch" href="https://cdn.vectorstock.com/">
+	<link rel="dns-prefetch" href="https://cdn1.vectorstock.com/">
+	<link rel="dns-prefetch" href="https://cdn2.vectorstock.com/">
+	<link rel="dns-prefetch" href="https://cdn3.vectorstock.com/">
+	<link rel="dns-prefetch" href="https://cdn4.vectorstock.com/">
+	<link rel="dns-prefetch" href="https://cdn5.vectorstock.com/">
+
+	<title>Graduate or professor Royalty Free Vector Image</title>
+	<meta name="description" content="Graduate or professor in a mortarboard hat conceptual of graduation and completing a college or university education or of the teaching profession vector icon. Download a Free Preview or High Quality Adobe Illustrator Ai, EPS, PDF and High Resolution JPEG versions. ID #14151452.">
+	
+	<meta property="og:site_name" content="VectorStock">
+	<meta property="og:type" content="product">
+	<meta property="og:url" content="https://www.vectorstock.com/royalty-free-vector/graduate-or-professor-vector-14151452">
+	<meta property="og:title" content="Graduate or professor vector image on VectorStock">
+	<meta property="og:description" content="Graduate or professor in a mortarboard hat conceptual of graduation and completing a college or university education or of the teaching profession vector icon. Download a Free Preview or High Quality Adobe Illustrator Ai, EPS, PDF and High Resolution JPEG versions.">
+	<meta property="og:image" content="https://cdn3.vectorstock.com/i/1000x1000/14/52/graduate-or-professor-vector-14151452.jpg">
+	<meta property="og:image:url" content="https://cdn3.vectorstock.com/i/1000x1000/14/52/graduate-or-professor-vector-14151452.jpg">
+	<meta property="og:image:secure_url" content="https://cdn3.vectorstock.com/i/1000x1000/14/52/graduate-or-professor-vector-14151452.jpg">
+	<meta property="og:image:type" content="image/jpeg">
+	<meta property="og:image:width" content="1000">
+	<meta property="og:image:height" content="1000">
+	<meta property="og:price:amount" content="0.69">
+	<meta property="og:price:currency" content="USD">
+	<meta property="product:price:amount" content="0.69">
+	<meta property="product:price:currency" content="USD">
+
+	<meta property="fb:app_id" content="241100862642313">
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:url" content="https://www.vectorstock.com/royalty-free-vector/graduate-or-professor-vector-14151452">
+	<meta name="twitter:title" content="Graduate or professor vector image">
+	<meta name="twitter:description" content="Graduate or professor in a mortarboard hat conceptual of graduation and completing a college or university education or of the teaching profession vector icon">
+	<meta name="twitter:image" content="https://cdn3.vectorstock.com/i/thumb-large/14/52/graduate-or-professor-vector-14151452.jpg">
+	<meta name="twitter:image:width" content="238">
+	<meta name="twitter:image:height" content="250">
+	<meta name="twitter:site" content="@VectorStock">
+
+	<link rel="canonical" href="https://www.vectorstock.com/royalty-free-vector/graduate-or-professor-vector-14151452">
+	<link rel="shortcut icon" href="https://cdn.vectorstock.com/img/icons/favicon.ico" type="image/x-icon">
+
+	<link rel="stylesheet" href="./icon4_files/common1575583788.min.css">
+	<link rel="stylesheet" href="./icon4_files/vector1575583788.min.css">
+	<script src="./icon4_files/common1576204651.min.js.download"></script>
+	<script src="./icon4_files/vector1576204651.min.js.download"></script>
+<!-- Analytics --><script type="text/javascript">// Load GA script
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+// Setup
+ga('create', 'UA-2180430-2', 'none');
+ga('require', 'linkid', 'linkid.js');
+ga('send', 'pageview');
+
+</script>
+</head>
+<body>
+
+<!-- Top header -->
+<header>
+	<nav class="top">
+		<figure>
+			<a href="https://www.vectorstock.com/" title="VectorStock®">VectorStock®</a>
+		</figure>
+
+		<div class="grid">
+			<form id="searchbox" class="empty">
+				<div class="wrap">
+					<fieldset>
+						<div class="contents">
+							<div class="tags">
+								<ul></ul>
+							</div>
+							<div class="input">
+								<input type="text" name="input" autocomplete="off" autocapitalize="none" spellcheck="true" value="" placeholder="Search…" maxlength="50" autofocus="">
+								<button type="button" data-action="clear">×</button>
+							</div>
+
+							<input type="hidden" name="category" value="">
+							<input type="hidden" name="custom_srp" value="">
+							<input type="hidden" name="artist" value="">
+							<input type="hidden" name="similar" value="">
+						</div>
+					<div class="suggestions"><div></div></div></fieldset>
+
+					<button type="submit">
+						<span class="icon">Search</span>
+					</button>
+				</div>
+			</form>
+			<ul>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors">All Vectors</a></li>
+					<li><a href="https://www.vectorstock.com/free-vectors">Free Vectors</a></li>
+				</ul>
+		</div>
+
+		<div class="aside">
+			<ul>
+				<li><a href="https://www.vectorstock.com/popular-categories" title="Popular Categories">Popular
+						Categories</a></li>
+					<li><button type="button" data-action="signup">Sign Up</button></li>
+				</ul>
+		</div>
+
+		<div id="mobilenav-icon">
+			<span></span><span></span><span></span><span></span>
+		</div>
+	</nav>
+
+	<!-- Submenu -->
+		<nav id="searchrelated"></nav>	
+
+		<!-- Mobile menu -->
+	<div id="mobilenav-menu">
+		<div>
+			<div class="group">
+				<h4>Browse</h4>
+				<ul>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors">All Vectors</a></li>
+					<li><a href="https://www.vectorstock.com/free-vectors">Free Vectors</a></li>
+				</ul>
+			</div>
+			<div class="group">
+				<h4>Account</h4>
+				<ul>
+					<li class="account">
+							<ul>
+								<li><a href="https://www.vectorstock.com/signup">Sign Up</a></li>
+								<li data-action="login"><a href="https://www.vectorstock.com/?login=1">Login…</a></li>
+							</ul>
+						</li>
+				</ul>
+				<form method="get" action="https://www.vectorstock.com/auth/logout" class="logout">
+					<input type="hidden" name="logout" value="1">
+				</form>
+			</div>
+			<div class="group">
+				<h4>Help</h4>
+				<ul>
+					<li><a href="https://www.vectorstock.com/faq"><abbr title="Frequently Asked Questions">FAQs</abbr></a></li>
+					<li><a href="https://www.vectorstock.com/contact">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+
+		<!-- Account Menu Tabs -->
+		<aside id="nav_sidebar" class="tabs tabsDark">
+
+			<nav>
+				<ul role="tablist">
+					<li data-tab-id="signup" class=""><span role="tab"><span>Sign Up</span></span></li>
+					<li data-tab-id="login" class="selected"><span role="tab"><span>Log In</span></span></li>
+				</ul>
+			</nav>
+
+			<section id="sb_signup" data-tab-id="signup" class="">
+				<div class="primary">
+					<p>New to VectorStock?</p>
+					<p><em>We're the largest royalty-free, vector-only stock agency in the world.</em></p>
+					<p>Every week we add new premium graphics by the thousands.</p>
+				</div>
+				<div class="secondary">
+					<p>Whether you're a global ad&nbsp;agency or a freelance graphic designer, we have the vector graphics to make your project come to life.</p>
+					<p>Buy Vectors, sell Vectors or both. <a href="https://www.vectorstock.com/signup">Sign up now, it’s free.</a></p>
+				</div>
+				<div class="footer">
+					<button class="master">
+						<span class="title">Sign Up...</span>
+						<span class="value">
+							<span class="symbol signup"></span>
+						</span>
+					</button>
+				</div>
+			</section>
+
+			<section id="sb_login" data-tab-id="login" class="selected">
+				<form action="https://www.vectorstock.com/auth/login" method="post">
+
+
+					<fieldset class="">
+						<label for="vs_username">Email / Username</label>
+						<div class="textfield">
+							<input type="text" id="vs_username" name="vs_username" value="" autocomplete="on" tabindex="1">
+						</div>
+					</fieldset>
+					<fieldset class="">
+						<label for="vs_password">Password</label>
+						<button type="button" class="forgot">Forgot Password</button>
+						<div class="textfield">
+							<input type="password" id="vs_password" name="vs_password" value="" autocomplete="on" tabindex="2" maxlength="20">
+						</div>
+					</fieldset>
+					<fieldset>
+						<div class="checkbox checked">
+							<label class="selected" for="vs_remember">
+								<span class="title">Stay Logged In</span>
+								<span class="icon"></span>
+								<input type="checkbox" id="vs_remember" name="vs_remember" value="yes" tabindex="3" checked="">
+							</label>
+						</div>
+					</fieldset>
+
+
+					<button type="submit" tabindex="4">Log In</button>
+				</form>
+				<div class="alternatives">
+					<h6>Or Login With</h6>
+					<ul>
+						<li class="gp"><a href="https://www.vectorstock.com/">
+							<span class="title">Google</span>
+							<span class="icon"></span>
+						</a></li>
+						<li class="fb"><a href="https://www.vectorstock.com/">
+							<span class="title">Facebook</span>
+							<span class="icon"></span>
+						</a></li>
+					</ul>
+				</div>
+
+				
+			</section>
+		</aside>
+
+	<!-- Page -->
+	<article>
+		<section id="vs-asset" style="min-height: 581px; max-width: 594px;">
+
+			<!-- Aside -->
+			<div class="aside">
+				<ol itemscope="" itemtype="http://schema.org/BreadcrumbList">
+					<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+						<a itemtype="http://schema.org/Thing" itemprop="item" href="https://www.vectorstock.com/royalty-free-vectors">
+							<span itemprop="name">Royalty Free Vectors</span>
+						</a>
+						<meta itemprop="position" content="1">
+					</li>
+					<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+						<a itemtype="http://schema.org/Thing" itemprop="item" href="https://www.vectorstock.com/royalty-free-vectors/professor-vectors">
+							<span itemprop="name">Professor Vectors</span>
+						</a>
+						<meta itemprop="position" content="2">
+					</li>
+				</ol>
+
+				<h1>
+					Graduate or professor vector&nbsp;image														</h1>
+
+				<figure style="padding-top: 99%;" class="target reveal">
+					<div class="highres" data-src="https://cdn3.vectorstock.com/i/1000x1000/14/52/graduate-or-professor-vector-14151452.jpg">
+						<noscript><img src="https://cdn3.vectorstock.com/i/1000x1000/14/52/graduate-or-professor-vector-14151452.jpg" title="Graduate or professor vector image" alt="Graduate or professor"></noscript>
+					<img src="./icon4_files/graduate-or-professor-vector-14151452.jpg"></div>
+					<div class="lowres">
+						<img src="./icon4_files/graduate-or-professor-vector-14151452(1).jpg" title="Graduate or professor vector image" alt="Graduate or professor">
+					</div>
+					<div class="overlay"></div>
+				</figure>
+
+				<form data-loggedin="0" data-licenses="2" data-license="standard" data-status="" data-payments="3" data-payment="single-image">
+					<input type="hidden" id="vector_id" value="14151452">
+					<input type="hidden" id="vector_title" value="Graduate or professor">
+					<input type="hidden" id="vector_description" value="Graduate or professor in a mortarboard hat conceptual of graduation and completing a college or university education or of the teaching profession vector icon. Download a Free Preview or High Quality Adobe Illustrator Ai, EPS, PDF and High Resolution JPEG versions.">
+					<input type="hidden" id="vector_url" value="https://www.vectorstock.com/royalty-free-vector/graduate-or-professor-vector-14151452">
+					<input type="hidden" id="vector_media" value="https://cdn3.vectorstock.com/i/1000x1000/14/52/graduate-or-professor-vector-14151452.jpg">
+					<input type="hidden" id="vector_ratio" value="1">
+					<input type="hidden" id="vector_license_status" value="">
+					<input type="hidden" id="artist_name" value="Greens87">
+					<input type="hidden" id="account_user" value="0">
+
+					<div class="options">
+						<!--
+						-- OPTION: License type
+						-->
+						<div class="option" data-type="license" data-license="standard" data-licenses="2">
+							<h6><span class="type">License</span><a href="https://www.vectorstock.com/faq/members/standard-license">Learn More</a></h6>
+							<div class="optgroup radgroup">
+								<fieldset>
+									<label for="f_license_standard" class="checked">
+										<input type="radio" id="f_license_standard" name="license" value="standard" checked="checked" tabindex="2">
+										<span class="label">Standard</span>
+										<span class="descr">For Print, Advertising, Design</span>
+									</label>
+								</fieldset>
+								<fieldset>
+									<label for="f_license_expanded">
+										<input type="radio" id="f_license_expanded" name="license" value="expanded" tabindex="4">
+										<span class="label">Expanded</span>
+										<span class="descr">For Resale &amp; Reproduction</span>
+									</label>
+								</fieldset>
+							</div>
+
+							<div class="help">
+								<p>The license type determines how you can use this image.</p>
+								<table>
+									<thead>
+										<tr>
+											<th></th>
+																						<th data-license="standard">Std.</th>																						<th data-license="expanded">Exp.</th>										</tr>
+									</thead>
+									<tbody>
+																				<tr>
+											<td>Print / Editorial</td>
+																						<td data-license="standard"><span class="yes"></span></td>
+											<td data-license="expanded"><span class="yes"></span></td>										</tr>
+										<tr>
+											<td>Graphic Design</td>
+																						<td data-license="standard"><span class="yes"></span></td>
+											<td data-license="expanded"><span class="yes"></span></td>										</tr>
+										<tr>
+											<td>Web Design</td>
+																						<td data-license="standard"><span class="yes"></span></td>
+											<td data-license="expanded"><span class="yes"></span></td>										</tr>
+										<tr>
+											<td>Social Media</td>
+																						<td data-license="standard"><span class="yes"></span></td>
+											<td data-license="expanded"><span class="yes"></span></td>										</tr>
+										<tr>
+											<td>Edit &amp; Modify</td>
+																						<td data-license="standard"><span class="yes"></span></td>
+											<td data-license="expanded"><span class="yes"></span></td>										</tr>
+										<tr>
+											<td>Multi-user</td>
+																						<td data-license="standard"><span class="no"></span></td>
+											<td data-license="expanded"><span class="yes"></span></td>										</tr>
+										<tr>
+											<td>Resale Items</td>
+																						<td data-license="standard"><span class="no"></span></td>
+											<td data-license="expanded"><span class="yes"></span></td>										</tr>
+										<tr>
+											<td>Unlimited Runs</td>
+																						<td data-license="standard"><span class="no"></span></td>
+											<td data-license="expanded"><span class="yes"></span></td>										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+						<!--
+						-- OPTION: Payment options (Standard)
+						-->
+						<div class="option" data-type="payment" data-license="standard">
+							<h6><span class="type">Ways to Buy</span><a href="https://www.vectorstock.com/faq/members/ways-to-buy">Compare</a></h6>
+							<div class="optgroup radgroup" data-license="standard">
+																<fieldset>
+									<label for="f_payment_standard_single-image" class="checked">
+										<input type="radio" id="f_payment_standard_single-image" name="payment_standard" data-cost="14.99" value="single-image" checked="checked" tabindex="5">
+										<span class="label">Single Image</span>
+										<span class="value"><small>$</small><var>14.99</var></span>
+									</label>
+								</fieldset>
+																<fieldset>
+									<label for="f_payment_standard_credits">
+										<input type="radio" id="f_payment_standard_credits" name="payment_standard" data-cost="1" value="credits" tabindex="6">
+										<span class="label">Credits</span>
+										<span class="value"><small>$</small><var>1.00</var></span>
+									</label>
+								</fieldset>
+								<fieldset>
+									<label for="f_payment_standard_subscription">
+										<input type="radio" id="f_payment_standard_subscription" name="payment_standard" data-cost="1" value="subscription" tabindex="7">
+										<span class="label">Subscription</span>
+										<span class="value"><small>$</small><var>0.69</var></span>
+									</label>
+								</fieldset>
+							</div>
+							<div class="help">
+								<p>There are three ways to pay for Standard licenses. Prices are $<abbr title="United States Dollars">US</abbr>.</p>
+
+								<table>
+									<thead>
+										<tr>
+											<th>Pay with</th>
+											<th>Image Price</th>
+										</tr>
+									</thead>
+									<tbody>
+																				<tr>
+											<td colspan="2">
+												<span class="title">
+													<span class="dt">Single Image</span>
+													<span class="dm"></span>
+													<span class="dd"><small>$</small>14.99</span>
+												</span>
+												<span class="byline">One-time payment</span>
+											</td>
+										</tr>
+																				<tr>
+											<td colspan="2">
+												<span class="title">
+													<span class="dt">Pay-As-You-Go Credits</span>
+													<span class="dm"></span>
+													<span class="dd"><small>$</small>1</span>
+												</span>
+												<span class="byline">Download images on-demand (1 credit = $1). Minimum purchase of 30.</span>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<span class="title">
+													<span class="dt">Subscription Plan</span>
+													<span class="dm"></span>
+													<span class="dd"><em>From</em> 69c</span>
+												</span>
+												<span class="byline">Choose a monthly plan. Unused downloads automatically roll into following month.</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<!--
+						-- OPTION: Payment options (Expanded)
+						-->
+						<div class="option" data-type="payment" data-license="expanded">
+							<h6><span class="type">Ways to Buy</span><a href="https://www.vectorstock.com/faq/members/ways-to-buy">Compare</a></h6>
+							<div class="optgroup radgroup" data-license="expanded">
+																<fieldset>
+									<label for="f_payment_expanded_single-image" class="checked">
+										<input type="radio" id="f_payment_expanded_single-image" name="payment_expanded" data-cost="29.99" value="single-image" checked="checked" tabindex="8">
+										<span class="label">Single Image</span>
+										<span class="value"><small>$</small><var>29.99</var></span>
+									</label>
+								</fieldset>
+																<fieldset>
+									<label for="f_payment_expanded_credits">
+										<input type="radio" id="f_payment_expanded_credits" name="payment_expanded" data-cost="30" value="credits" tabindex="9">
+										<span class="label">Credits</span>
+										<span class="value"><small>$</small><var>30.00</var></span>
+									</label>
+								</fieldset>
+							</div>
+														<div class="help">
+								<p>There are two ways to pay for Expanded licenses. Prices are $<abbr title="United States Dollars">US</abbr>.</p>
+
+								<table>
+									<thead>
+										<tr>
+											<th>Pay with</th>
+											<th>Cost per Image</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td colspan="2">
+												<span class="title">
+													<span class="dt">Single Image</span>
+													<span class="dm"></span>
+													<span class="dd"><small>$</small>29.99</span>
+												</span>
+												<span class="byline">One-off payment, no signup needed.</span>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<span class="title">
+													<span class="dt">Credits</span>
+													<span class="dm"></span>
+													<span class="dd"><small>$</small>30</span>
+												</span>
+												<span class="byline">Download images on-demand (1 credit = $1).</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+													</div>
+					</div>
+					<div class="download">
+						<button type="button" data-action="download">
+							<span class="label">Download Image</span>
+							<span class="icon"></span>
+						</button>
+						<h6><span class="label">Files Included</span></h6>
+						<div class="help">
+							<span class="loading"><span class="label">Loading Details...</span></span>
+						</div>
+					</div>
+					<div class="download_options">
+						<div class="wrap">
+							<div class="optgroup" data-action="download">
+								<span class="header">Download File/s:</span>
+								<div class="dropdown" data-value="zip">
+									<div class="display">
+										<span class="label"><strong>ZIP Archive</strong></span>
+										<span class="icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><path d="M10.6,12.8 15,17.2 19.4,12.8"></path></svg></span>
+									</div>
+									<div class="select">
+										<select>
+											<optgroup label="All Files">
+												<option value="zip" data-label="ZIP Archive" data-details="" data-url="" selected="selected">ZIP Archive</option>											</optgroup>
+											<optgroup label="Image">
+												<option value="jpg" data-label="High-res JPG" data-details="300 DPI+" data-url="">High-res JPG (300 DPI+)</option>												<option value="png" data-label="High-res PNG" data-details="300 DPI+" data-url="">High-res PNG (300 DPI+)</option>											</optgroup>
+											<optgroup label="Vector">
+												<option value="ai" data-label="Adobe Illustrator" data-details="v10+" data-url="">Adobe Illustrator (v10+)</option>												<option value="eps" data-label="Vector EPS" data-details="v8+" data-url="">Vector EPS (v8+)</option>												<option value="pdf" data-label="Vector PDF" data-details="" data-url="">Vector PDF</option>											</optgroup>
+										</select>
+									</div>
+								</div>
+								<button type="button" data-action="download_file">
+									<span class="label">Download ZIP</span>
+									<span class="icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M23.6,21.2 23.6,9.5 16.4,9.5 16.4,21.3 10.8,21.3 11,21.5 20,30.5 29.2,21.3"></path></svg></span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<!-- Image -->
+			<div class="image">
+				<figure data-orientation="square" style="padding-top: 99%;" class="target reveal">
+					<div class="highres" data-src="https://cdn3.vectorstock.com/i/1000x1000/14/52/graduate-or-professor-vector-14151452.jpg">
+						<noscript><img src="https://cdn3.vectorstock.com/i/1000x1000/14/52/graduate-or-professor-vector-14151452.jpg" title="Graduate or professor vector image" alt="Graduate or professor"></noscript>
+					<img src="./icon4_files/graduate-or-professor-vector-14151452.jpg"></div>
+					<div class="lowres">
+						<img src="./icon4_files/graduate-or-professor-vector-14151452(1).jpg" title="Graduate or professor vector image" alt="Graduate or professor">
+					</div>
+					<div class="overlay"></div>
+					<div class="panels">
+						<div class="share">
+							<h4>Share on</h4>
+							<ul>
+								<li class="pinterest"><button type="button" data-action="pinterest"><span><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" focusable="false" role="img"><path d="M12.5,0C5.6,0,0,5.6,0,12.5c0,5.12,3.08,9.52,7.48,11.45c-0.03-0.87-0.01-1.92,0.22-2.87c0.24-1.01,1.61-6.81,1.61-6.81s-0.4-0.8-0.4-1.98c0-1.85,1.07-3.24,2.41-3.24c1.14,0,1.69,0.85,1.69,1.88c0,1.14-0.73,2.85-1.1,4.44c-0.31,1.33,0.67,2.41,1.97,2.41c2.37,0,3.96-3.04,3.96-6.65c0-2.74-1.85-4.79-5.2-4.79c-3.79,0-6.15,2.83-6.15,5.99c0,1.09,0.32,1.86,0.82,2.45c0.23,0.27,0.26,0.38,0.18,0.7c-0.06,0.23-0.2,0.78-0.25,1c-0.08,0.32-0.34,0.43-0.63,0.31c-1.75-0.71-2.56-2.62-2.56-4.77c0-3.55,3-7.81,8.93-7.81c4.77,0,7.91,3.45,7.91,7.16c0,4.9-2.73,8.57-6.75,8.57c-1.35,0-2.62-0.73-3.05-1.56c0,0-0.73,2.88-0.88,3.44c-0.27,0.96-0.78,1.93-1.26,2.68C10.08,24.82,11.27,25,12.5,25C19.4,25,25,19.4,25,12.5S19.4,0,12.5,0L12.5,0z"></path></svg></span><span class="label">Pinterest</span></span></button></li>
+								<li class="facebook"><button type="button" data-action="facebook"><span><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" focusable="false" role="img"><path d="M22.44,1H2.56C1.7,1,1,1.7,1,2.56v19.88C1,23.3,1.7,24,2.56,24h10.41v-8.89H9.98v-3.46h2.99V9.1c0-2.96,1.81-4.58,4.45-4.58c1.27,0,2.35,0.09,2.67,0.14v3.1l-1.83,0c-1.44,0-1.72,0.68-1.72,1.69v2.21h3.43l-0.45,3.46h-2.98V24h5.89C23.3,24,24,23.3,24,22.44V2.56C24,1.7,23.3,1,22.44,1z"></path></svg></span><span class="label">Facebook</span></span></button></li>
+								<li class="twitter"><button type="button" data-action="twitter"><span><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" focusable="false" role="img"><path d="M7.86,22.5c9.43,0,14.59-7.69,14.59-14.37c0-0.22,0-0.44-0.01-0.65c1-0.71,1.87-1.6,2.56-2.61c-0.92,0.4-1.91,0.67-2.95,0.79c1.06-0.62,1.87-1.61,2.26-2.79c-0.99,0.58-2.09,1-3.26,1.23c-0.94-0.98-2.27-1.6-3.74-1.6c-2.83,0-5.13,2.26-5.13,5.05c0,0.4,0.05,0.78,0.13,1.15C8.05,8.49,4.27,6.48,1.74,3.42C1.3,4.17,1.05,5.04,1.05,5.96c0,1.75,0.91,3.3,2.28,4.2C2.49,10.14,1.7,9.91,1,9.53C1,9.55,1,9.58,1,9.6c0,2.45,1.77,4.49,4.11,4.95c-0.43,0.12-0.88,0.18-1.35,0.18c-0.33,0-0.65-0.03-0.96-0.09c0.65,2.01,2.55,3.47,4.79,3.51C5.84,19.5,3.63,20.3,1.22,20.3c-0.41,0-0.82-0.02-1.22-0.07C2.27,21.66,4.97,22.5,7.86,22.5"></path></svg></span><span class="label">Twitter</span></span></button></li>
+							</ul>
+						</div>
+						<div class="composite">
+							<button type="button" data-action="download"><span><span class="label">Download JPG Preview Image</span></span></button>
+						</div>
+					</div>
+				</figure>
+				<div class="details">
+					<div class="meta">
+						<ul>
+							<li class="meta-id">
+								<dl><dt>Image ID</dt><dd>14151452</dd></dl>
+							</li>
+							<li class="meta-artist">
+								<dl>
+									<dt>Artist</dt>
+									<dd><a href="https://www.vectorstock.com/royalty-free-vectors/vectors-by_Greens87" rel="nofollow">Greens87</a><button type="button" data-action="follow" title="Follow Artists that you like to create a newsfeed of their recent images."><span class="label">Follow</span></button></dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+					<div class="options" data-total="2">
+						<ul>
+							<li class="opt-like">
+								<button type="button" data-action="like" data-count="0"><span class="icon">♥</span><span class="label">Like</span><span class="tally"></span></button>
+							</li>
+							<li class="opt-cart">
+								<button type="button" data-action="cart"><span class="icon">+</span><span class="label">Cart</span></button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- Metadata -->
+			<div class="metadata">
+				<div itemtype="http://schema.org/Product" itemscope="">
+					<meta itemprop="sku" content="14151452">
+					<meta itemprop="productID" content="14151452">
+					<meta itemprop="name" content="Graduate or professor">
+					<meta itemprop="description" content="Graduate or professor in a mortarboard hat conceptual of graduation and completing a college or university education or of the teaching profession vector icon. Download a Free Preview or High Quality Adobe Illustrator Ai, EPS, PDF and High Resolution JPEG versions.">
+					<meta itemprop="releaseDate" content="2017-04-12">
+					<link itemprop="image" href="./icon4_files/graduate-or-professor-vector-14151452.jpg">
+					
+					<div itemprop="brand" itemtype="http://schema.org/Thing" itemscope="">
+						<meta itemprop="name" content="VectorStock">
+					</div>
+					<div itemprop="offers" itemtype="http://schema.org/Offer" itemscope="">
+						<link itemprop="url" href="https://www.vectorstock.com/royalty-free-vector/graduate-or-professor-vector-14151452">
+						<meta itemprop="availability" content="https://schema.org/InStock">
+						<div itemprop="price">0.69</div>
+						<div itemprop="priceCurrency">USD</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section id="vs-related">
+			<div id="group-similar" class="group">
+				<h6><span class="icon"></span><strong>Similar Images</strong></h6>
+
+				<div class="gallery large">
+					<ul>
+						<li data-src="https://cdn4.vectorstock.com/i/thumb-large/21/28/set-flying-graduation-caps-collection-of-vector-27182128.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/set-flying-graduation-caps-collection-of-vector-27182128" title="set flying graduation caps collection of vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumb-large/21/28/set-flying-graduation-caps-collection-of-vector-27182128.jpg" title="set flying graduation caps collection of" alt="set flying graduation caps collection of vector image"></noscript><img src="./icon4_files/set-flying-graduation-caps-collection-of-vector-27182128.jpg"></a></li>
+						<li data-src="https://cdn2.vectorstock.com/i/thumb-large/01/81/flat-icon-graduation-cap-with-long-shadow-style-vector-4060181.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/flat-icon-graduation-cap-with-long-shadow-style-vector-4060181" title="Flat icon graduation cap with long shadow style vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumb-large/01/81/flat-icon-graduation-cap-with-long-shadow-style-vector-4060181.jpg" title="Flat icon graduation cap with long shadow style" alt="Flat icon graduation cap with long shadow style vector image"></noscript><img src="./icon4_files/flat-icon-graduation-cap-with-long-shadow-style-vector-4060181.jpg"></a></li>
+						<li data-src="https://cdn1.vectorstock.com/i/thumb-large/79/15/diploma-cap-graduation-cartificate-vector-23357915.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/diploma-cap-graduation-cartificate-vector-23357915" title="diploma cap graduation cartificate vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumb-large/79/15/diploma-cap-graduation-cartificate-vector-23357915.jpg" title="diploma cap graduation cartificate" alt="diploma cap graduation cartificate vector image"></noscript><img src="./icon4_files/diploma-cap-graduation-cartificate-vector-23357915.jpg"></a></li>
+						<li data-src="https://cdn5.vectorstock.com/i/thumb-large/60/19/scientist-in-a-graduation-cap-cartoon-vector-24716019.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/scientist-in-a-graduation-cap-cartoon-vector-24716019" title="scientist in a graduation cap cartoon vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumb-large/60/19/scientist-in-a-graduation-cap-cartoon-vector-24716019.jpg" title="scientist in a graduation cap cartoon" alt="scientist in a graduation cap cartoon vector image"></noscript><img src="./icon4_files/scientist-in-a-graduation-cap-cartoon-vector-24716019.jpg"></a></li>
+						<li data-src="https://cdn5.vectorstock.com/i/thumb-large/86/19/graduation-cap-graphic-design-template-isolated-vector-27408619.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/graduation-cap-graphic-design-template-isolated-vector-27408619" title="graduation cap graphic design template isolated vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumb-large/86/19/graduation-cap-graphic-design-template-isolated-vector-27408619.jpg" title="graduation cap graphic design template isolated" alt="graduation cap graphic design template isolated vector image"></noscript><img src="./icon4_files/graduation-cap-graphic-design-template-isolated-vector-27408619.jpg"></a></li>
+						<li data-src="https://cdn1.vectorstock.com/i/thumb-large/00/85/graduate-avatar-icon-vector-9780085.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/graduate-avatar-icon-vector-9780085" title="Graduate avatar icon vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumb-large/00/85/graduate-avatar-icon-vector-9780085.jpg" title="Graduate avatar icon" alt="Graduate avatar icon vector image"></noscript><img src="./icon4_files/graduate-avatar-icon-vector-9780085.jpg"></a></li>
+						<li data-src="https://cdn1.vectorstock.com/i/thumb-large/12/35/cartoon-academic-graduation-mortarboard-square-cap-vector-26381235.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/cartoon-academic-graduation-mortarboard-square-cap-vector-26381235" title="cartoon academic graduation mortarboard square cap vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumb-large/12/35/cartoon-academic-graduation-mortarboard-square-cap-vector-26381235.jpg" title="cartoon academic graduation mortarboard square cap" alt="cartoon academic graduation mortarboard square cap vector image"></noscript><img src="./icon4_files/cartoon-academic-graduation-mortarboard-square-cap-vector-26381235.jpg"></a></li>
+						<li data-src="https://cdn3.vectorstock.com/i/thumb-large/74/07/graduation-and-commencement-icon-set-in-thin-line-vector-25957407.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/graduation-and-commencement-icon-set-in-thin-line-vector-25957407" title="graduation and commencement icon set in thin line vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumb-large/74/07/graduation-and-commencement-icon-set-in-thin-line-vector-25957407.jpg" title="graduation and commencement icon set in thin line" alt="graduation and commencement icon set in thin line vector image"></noscript><img src="./icon4_files/graduation-and-commencement-icon-set-in-thin-line-vector-25957407.jpg"></a></li>
+						<li data-src="https://cdn1.vectorstock.com/i/thumb-large/66/15/simple-student-man-in-graduation-cap-seamless-vector-21276615.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/simple-student-man-in-graduation-cap-seamless-vector-21276615" title="simple student man in graduation cap seamless vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumb-large/66/15/simple-student-man-in-graduation-cap-seamless-vector-21276615.jpg" title="simple student man in graduation cap seamless" alt="simple student man in graduation cap seamless vector image"></noscript><img src="./icon4_files/simple-student-man-in-graduation-cap-seamless-vector-21276615.jpg"></a></li>
+						<li data-src="https://cdn4.vectorstock.com/i/thumb-large/51/28/graduation-cap-or-mortar-board-icon-vector-23855128.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/graduation-cap-or-mortar-board-icon-vector-23855128" title="graduation cap or mortar board icon vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumb-large/51/28/graduation-cap-or-mortar-board-icon-vector-23855128.jpg" title="graduation cap or mortar board icon" alt="graduation cap or mortar board icon vector image"></noscript><img src="./icon4_files/graduation-cap-or-mortar-board-icon-vector-23855128.jpg"></a></li>
+						<li data-src="https://cdn1.vectorstock.com/i/thumb-large/84/45/graduation-cap-and-diploma-icon-simple-sign-and-vector-27678445.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/graduation-cap-and-diploma-icon-simple-sign-and-vector-27678445" title="graduation cap and diploma icon simple sign and vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumb-large/84/45/graduation-cap-and-diploma-icon-simple-sign-and-vector-27678445.jpg" title="graduation cap and diploma icon simple sign and" alt="graduation cap and diploma icon simple sign and vector image"></noscript><img src="./icon4_files/graduation-cap-and-diploma-icon-simple-sign-and-vector-27678445.jpg"></a></li>
+						<li data-src="https://cdn1.vectorstock.com/i/thumb-large/12/80/student-line-icon-vector-10521280.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/student-line-icon-vector-10521280" title="Student line icon vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumb-large/12/80/student-line-icon-vector-10521280.jpg" title="Student line icon" alt="Student line icon vector image"></noscript><img src="./icon4_files/student-line-icon-vector-10521280.jpg"></a></li>
+						<li data-src="https://cdn2.vectorstock.com/i/thumb-large/07/66/graduate-woman-icon-vector-10790766.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/graduate-woman-icon-vector-10790766" title="Graduate woman icon vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumb-large/07/66/graduate-woman-icon-vector-10790766.jpg" title="Graduate woman icon" alt="Graduate woman icon vector image"></noscript></a></li>
+						<li data-src="https://cdn3.vectorstock.com/i/thumb-large/97/67/graduation-cap-or-hat-in-the-vector-28049767.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/graduation-cap-or-hat-in-the-vector-28049767" title="graduation cap or hat in the vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumb-large/97/67/graduation-cap-or-hat-in-the-vector-28049767.jpg" title="graduation cap or hat in the" alt="graduation cap or hat in the vector image"></noscript></a></li>
+						<li data-src="https://cdn1.vectorstock.com/i/thumb-large/47/35/graduation-man-and-woman-avatars-vector-20734735.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/graduation-man-and-woman-avatars-vector-20734735" title="graduation man and woman avatars vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumb-large/47/35/graduation-man-and-woman-avatars-vector-20734735.jpg" title="graduation man and woman avatars" alt="graduation man and woman avatars vector image"></noscript></a></li>
+						<li data-src="https://cdn3.vectorstock.com/i/thumb-large/51/02/graduation-cap-tassel-symbol-education-vector-25245102.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/graduation-cap-tassel-symbol-education-vector-25245102" title="graduation cap tassel symbol education vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumb-large/51/02/graduation-cap-tassel-symbol-education-vector-25245102.jpg" title="graduation cap tassel symbol education" alt="graduation cap tassel symbol education vector image"></noscript></a></li>
+						<li data-src="https://cdn3.vectorstock.com/i/thumb-large/71/42/flat-graduation-cap-icon-vector-25817142.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/flat-graduation-cap-icon-vector-25817142" title="flat graduation cap icon vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumb-large/71/42/flat-graduation-cap-icon-vector-25817142.jpg" title="flat graduation cap icon" alt="flat graduation cap icon vector image"></noscript></a></li>
+						<li data-src="https://cdn2.vectorstock.com/i/thumb-large/37/36/student-hat-menu-infographic-option-banner-card-vector-13493736.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/student-hat-menu-infographic-option-banner-card-vector-13493736" title="student hat menu infographic option banner card vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumb-large/37/36/student-hat-menu-infographic-option-banner-card-vector-13493736.jpg" title="student hat menu infographic option banner card" alt="student hat menu infographic option banner card vector image"></noscript></a></li>
+						<li data-src="https://cdn5.vectorstock.com/i/thumb-large/15/84/class-of-2019-congrats-flat-colorful-poster-with-vector-21611584.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/class-of-2019-congrats-flat-colorful-poster-with-vector-21611584" title="class of 2019 congrats flat colorful poster with vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumb-large/15/84/class-of-2019-congrats-flat-colorful-poster-with-vector-21611584.jpg" title="class of 2019 congrats flat colorful poster with" alt="class of 2019 congrats flat colorful poster with vector image"></noscript></a></li>
+						<li data-src="https://cdn2.vectorstock.com/i/thumb-large/19/16/education-for-graduation-absrtract-sign-vector-23711916.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/education-for-graduation-absrtract-sign-vector-23711916" title="education for graduation absrtract sign vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumb-large/19/16/education-for-graduation-absrtract-sign-vector-23711916.jpg" title="education for graduation absrtract sign" alt="education for graduation absrtract sign vector image"></noscript></a></li>
+					</ul>
+				</div>
+				<div class="gallery small more">
+					<ul>
+						<li data-id="21373835" data-title="isometric university infographic concept" data-src="https://cdn1.vectorstock.com/i/thumbs/38/35/isometric-university-infographic-concept-vector-21373835.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/isometric-university-infographic-concept-vector-21373835" title="isometric university infographic concept vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/38/35/isometric-university-infographic-concept-vector-21373835.jpg" title="isometric university infographic concept" alt="isometric university infographic concept vector image"></noscript></a></li>
+						<li data-id="516758" data-title="graduation emoticon" data-src="https://cdn4.vectorstock.com/i/thumbs/67/58/graduation-emoticon-vector-516758.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/graduation-emoticon-vector-516758" title="graduation emoticon vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/67/58/graduation-emoticon-vector-516758.jpg" title="graduation emoticon" alt="graduation emoticon vector image"></noscript></a></li>
+						<li data-id="21448747" data-title="set of graduation caps with red tassels" data-src="https://cdn3.vectorstock.com/i/thumbs/87/47/set-of-graduation-caps-with-red-tassels-vector-21448747.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/set-of-graduation-caps-with-red-tassels-vector-21448747" title="set of graduation caps with red tassels vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/87/47/set-of-graduation-caps-with-red-tassels-vector-21448747.jpg" title="set of graduation caps with red tassels" alt="set of graduation caps with red tassels vector image"></noscript></a></li>
+						<li data-id="3193799" data-title="Graduation Cap Icon" data-src="https://cdn5.vectorstock.com/i/thumbs/37/99/graduation-cap-icon-vector-3193799.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/graduation-cap-icon-vector-3193799" title="Graduation Cap Icon vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/37/99/graduation-cap-icon-vector-3193799.jpg" title="Graduation Cap Icon" alt="Graduation Cap Icon vector image"></noscript></a></li>
+						<li data-id="22488354" data-title="thin line art university poster banner" data-src="https://cdn5.vectorstock.com/i/thumbs/83/54/thin-line-art-university-poster-banner-vector-22488354.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/thin-line-art-university-poster-banner-vector-22488354" title="thin line art university poster banner vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/83/54/thin-line-art-university-poster-banner-vector-22488354.jpg" title="thin line art university poster banner" alt="thin line art university poster banner vector image"></noscript></a></li>
+						<li data-id="10473888" data-title="Graduate Outline Icon" data-src="https://cdn4.vectorstock.com/i/thumbs/38/88/graduate-outline-icon-vector-10473888.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/graduate-outline-icon-vector-10473888" title="Graduate Outline Icon vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/38/88/graduate-outline-icon-vector-10473888.jpg" title="Graduate Outline Icon" alt="Graduate Outline Icon vector image"></noscript></a></li>
+						<li data-id="21201321" data-title="graduate and scroll banner sign" data-src="https://cdn2.vectorstock.com/i/thumbs/13/21/graduate-and-scroll-banner-sign-vector-21201321.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/graduate-and-scroll-banner-sign-vector-21201321" title="graduate and scroll banner sign vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/13/21/graduate-and-scroll-banner-sign-vector-21201321.jpg" title="graduate and scroll banner sign" alt="graduate and scroll banner sign vector image"></noscript></a></li>
+						<li data-id="22777673" data-title="man reading a book" data-src="https://cdn4.vectorstock.com/i/thumbs/76/73/man-reading-a-book-vector-22777673.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/man-reading-a-book-vector-22777673" title="man reading a book vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/76/73/man-reading-a-book-vector-22777673.jpg" title="man reading a book" alt="man reading a book vector image"></noscript></a></li>
+						<li data-id="21015131" data-title="happy graduate student in the sky flying graduate" data-src="https://cdn2.vectorstock.com/i/thumbs/51/31/happy-graduate-student-in-the-sky-flying-graduate-vector-21015131.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/happy-graduate-student-in-the-sky-flying-graduate-vector-21015131" title="happy graduate student in the sky flying graduate vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/51/31/happy-graduate-student-in-the-sky-flying-graduate-vector-21015131.jpg" title="happy graduate student in the sky flying graduate" alt="happy graduate student in the sky flying graduate vector image"></noscript></a></li>
+						<li data-id="1824230" data-title="Graduation school hat" data-src="https://cdn1.vectorstock.com/i/thumbs/42/30/graduation-school-hat-vector-1824230.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/graduation-school-hat-vector-1824230" title="Graduation school hat vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/42/30/graduation-school-hat-vector-1824230.jpg" title="Graduation school hat" alt="Graduation school hat vector image"></noscript></a></li>
+						<li data-id="21589377" data-title="realistic graduation cap hang on the corner" data-src="https://cdn3.vectorstock.com/i/thumbs/93/77/realistic-graduation-cap-hang-on-the-corner-vector-21589377.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/realistic-graduation-cap-hang-on-the-corner-vector-21589377" title="realistic graduation cap hang on the corner vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/93/77/realistic-graduation-cap-hang-on-the-corner-vector-21589377.jpg" title="realistic graduation cap hang on the corner" alt="realistic graduation cap hang on the corner vector image"></noscript></a></li>
+						<li data-id="1923456" data-title="Academic cap icon Study hat symbol" data-src="https://cdn2.vectorstock.com/i/thumbs/34/56/academic-cap-icon-study-hat-symbol-vector-1923456.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/academic-cap-icon-study-hat-symbol-vector-1923456" title="Academic cap icon Study hat symbol vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/34/56/academic-cap-icon-study-hat-symbol-vector-1923456.jpg" title="Academic cap icon Study hat symbol" alt="Academic cap icon Study hat symbol vector image"></noscript></a></li>
+						<li data-id="22511141" data-title="realistic graduation hat and rolled diploma with" data-src="https://cdn2.vectorstock.com/i/thumbs/11/41/realistic-graduation-hat-and-rolled-diploma-with-vector-22511141.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/realistic-graduation-hat-and-rolled-diploma-with-vector-22511141" title="realistic graduation hat and rolled diploma with vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/11/41/realistic-graduation-hat-and-rolled-diploma-with-vector-22511141.jpg" title="realistic graduation hat and rolled diploma with" alt="realistic graduation hat and rolled diploma with vector image"></noscript></a></li>
+						<li data-id="24883317" data-title="a happy smiling frog wearing a black graduate" data-src="https://cdn3.vectorstock.com/i/thumbs/33/17/a-happy-smiling-frog-wearing-a-black-graduate-vector-24883317.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/a-happy-smiling-frog-wearing-a-black-graduate-vector-24883317" title="a happy smiling frog wearing a black graduate vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/33/17/a-happy-smiling-frog-wearing-a-black-graduate-vector-24883317.jpg" title="a happy smiling frog wearing a black graduate" alt="a happy smiling frog wearing a black graduate vector image"></noscript></a></li>
+						<li data-id="24924294" data-title="young man cartoon" data-src="https://cdn5.vectorstock.com/i/thumbs/42/94/young-man-cartoon-vector-24924294.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/young-man-cartoon-vector-24924294" title="young man cartoon vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/42/94/young-man-cartoon-vector-24924294.jpg" title="young man cartoon" alt="young man cartoon vector image"></noscript></a></li>
+						<li data-id="2808606" data-title="hat" data-src="https://cdn2.vectorstock.com/i/thumbs/86/06/hat-vector-2808606.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/hat-vector-2808606" title="hat vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/86/06/hat-vector-2808606.jpg" title="hat" alt="hat vector image"></noscript></a></li>
+						<li data-id="6036648" data-title="Owl in graduation hat" data-src="https://cdn4.vectorstock.com/i/thumbs/66/48/owl-in-graduation-hat-vector-6036648.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/owl-in-graduation-hat-vector-6036648" title="Owl in graduation hat vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/66/48/owl-in-graduation-hat-vector-6036648.jpg" title="Owl in graduation hat" alt="Owl in graduation hat vector image"></noscript></a></li>
+						<li data-id="21826292" data-title="isometric college education icon school" data-src="https://cdn3.vectorstock.com/i/thumbs/62/92/isometric-college-education-icon-school-vector-21826292.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/isometric-college-education-icon-school-vector-21826292" title="isometric college education icon school vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/62/92/isometric-college-education-icon-school-vector-21826292.jpg" title="isometric college education icon school" alt="isometric college education icon school vector image"></noscript></a></li>
+						<li data-id="20428713" data-title="wise owl cartoon character mascot 3d icon" data-src="https://cdn4.vectorstock.com/i/thumbs/87/13/wise-owl-cartoon-character-mascot-3d-icon-vector-20428713.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/wise-owl-cartoon-character-mascot-3d-icon-vector-20428713" title="wise owl cartoon character mascot 3d icon vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/87/13/wise-owl-cartoon-character-mascot-3d-icon-vector-20428713.jpg" title="wise owl cartoon character mascot 3d icon" alt="wise owl cartoon character mascot 3d icon vector image"></noscript></a></li>
+						<li data-id="9937844" data-title="owl in graduation cap wisdom symbol old" data-src="https://cdn5.vectorstock.com/i/thumbs/78/44/owl-in-graduation-cap-wisdom-symbol-old-vector-9937844.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/owl-in-graduation-cap-wisdom-symbol-old-vector-9937844" title="owl in graduation cap wisdom symbol old vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/78/44/owl-in-graduation-cap-wisdom-symbol-old-vector-9937844.jpg" title="owl in graduation cap wisdom symbol old" alt="owl in graduation cap wisdom symbol old vector image"></noscript></a></li>
+						<li data-id="28059171" data-title="cartoon owl wearing graduation cap holding diploma" data-src="https://cdn2.vectorstock.com/i/thumbs/91/71/cartoon-owl-wearing-graduation-cap-holding-diploma-vector-28059171.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/cartoon-owl-wearing-graduation-cap-holding-diploma-vector-28059171" title="cartoon owl wearing graduation cap holding diploma vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/91/71/cartoon-owl-wearing-graduation-cap-holding-diploma-vector-28059171.jpg" title="cartoon owl wearing graduation cap holding diploma" alt="cartoon owl wearing graduation cap holding diploma vector image"></noscript></a></li>
+						<li data-id="26715893" data-title="white education cup with golden elements" data-src="https://cdn4.vectorstock.com/i/thumbs/58/93/white-education-cup-with-golden-elements-vector-26715893.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/white-education-cup-with-golden-elements-vector-26715893" title="white education cup with golden elements vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/58/93/white-education-cup-with-golden-elements-vector-26715893.jpg" title="white education cup with golden elements" alt="white education cup with golden elements vector image"></noscript></a></li>
+						<li data-id="21751116" data-title="graduation cap with tassel and medal education" data-src="https://cdn2.vectorstock.com/i/thumbs/11/16/graduation-cap-with-tassel-and-medal-education-vector-21751116.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/graduation-cap-with-tassel-and-medal-education-vector-21751116" title="graduation cap with tassel and medal education vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/11/16/graduation-cap-with-tassel-and-medal-education-vector-21751116.jpg" title="graduation cap with tassel and medal education" alt="graduation cap with tassel and medal education vector image"></noscript></a></li>
+						<li data-id="2227075" data-title="Set of flat school and education icons" data-src="https://cdn1.vectorstock.com/i/thumbs/70/75/set-of-flat-school-and-education-icons-vector-2227075.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/set-of-flat-school-and-education-icons-vector-2227075" title="Set of flat school and education icons vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/70/75/set-of-flat-school-and-education-icons-vector-2227075.jpg" title="Set of flat school and education icons" alt="Set of flat school and education icons vector image"></noscript></a></li>
+						<li data-id="21344584" data-title="big pile of books" data-src="https://cdn5.vectorstock.com/i/thumbs/45/84/big-pile-of-books-vector-21344584.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/big-pile-of-books-vector-21344584" title="big pile of books vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/45/84/big-pile-of-books-vector-21344584.jpg" title="big pile of books" alt="big pile of books vector image"></noscript></a></li>
+						<li data-id="13927159" data-title="isolated black and white color students graduation" data-src="https://cdn5.vectorstock.com/i/thumbs/71/59/isolated-black-and-white-color-students-graduation-vector-13927159.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/isolated-black-and-white-color-students-graduation-vector-13927159" title="isolated black and white color students graduation vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/71/59/isolated-black-and-white-color-students-graduation-vector-13927159.jpg" title="isolated black and white color students graduation" alt="isolated black and white color students graduation vector image"></noscript></a></li>
+						<li data-id="22024059" data-title="thin line online education icon set" data-src="https://cdn5.vectorstock.com/i/thumbs/40/59/thin-line-online-education-icon-set-vector-22024059.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/thin-line-online-education-icon-set-vector-22024059" title="thin line online education icon set vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/40/59/thin-line-online-education-icon-set-vector-22024059.jpg" title="thin line online education icon set" alt="thin line online education icon set vector image"></noscript></a></li>
+						<li data-id="4259263" data-title="Online Education Icon Flat" data-src="https://cdn4.vectorstock.com/i/thumbs/92/63/online-education-icon-flat-vector-4259263.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/online-education-icon-flat-vector-4259263" title="Online Education Icon Flat vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/92/63/online-education-icon-flat-vector-4259263.jpg" title="Online Education Icon Flat" alt="Online Education Icon Flat vector image"></noscript></a></li>
+						<li data-id="2835618" data-title="icon of mortarboard or graduation cap and diploma" data-src="https://cdn4.vectorstock.com/i/thumbs/56/18/icon-of-mortarboard-or-graduation-cap-and-diploma-vector-2835618.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/icon-of-mortarboard-or-graduation-cap-and-diploma-vector-2835618" title="icon of mortarboard or graduation cap and diploma vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/56/18/icon-of-mortarboard-or-graduation-cap-and-diploma-vector-2835618.jpg" title="icon of mortarboard or graduation cap and diploma" alt="icon of mortarboard or graduation cap and diploma vector image"></noscript></a></li>
+						<li data-id="13461612" data-title="professor monster" data-src="https://cdn3.vectorstock.com/i/thumbs/16/12/professor-monster-vector-13461612.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/professor-monster-vector-13461612" title="professor monster vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/16/12/professor-monster-vector-13461612.jpg" title="professor monster" alt="professor monster vector image"></noscript></a></li>
+						<li class="more"><div><a href="https://www.vectorstock.com/royalty-free-vectors/vectors-similar-to_14151452" rel="nofollow"><span class="lrg">More Images…</span><span class="sml">More</span></a></div></li>
+					</ul>
+				</div>
+			</div>
+			<div id="group-artist" class="group">
+				<h6><span class="icon"></span><strong>More by <a href="https://www.vectorstock.com/royalty-free-vectors/vectors-by_Greens87" rel="nofollow">Greens87</a></strong></h6>
+
+				<div class="gallery large">
+					<ul>
+						<li data-src="https://cdn2.vectorstock.com/i/thumb-large/22/66/scientist-portrait-silhouette-vector-20782266.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/scientist-portrait-silhouette-vector-20782266" title="scientist portrait silhouette vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumb-large/22/66/scientist-portrait-silhouette-vector-20782266.jpg" title="scientist portrait silhouette" alt="scientist portrait silhouette vector image"></noscript></a></li>
+						<li data-src="https://cdn5.vectorstock.com/i/thumb-large/57/89/man-with-mustache-wearing-a-glasses-people-icon-vector-24025789.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/man-with-mustache-wearing-a-glasses-people-icon-vector-24025789" title="man with mustache wearing a glasses people icon vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumb-large/57/89/man-with-mustache-wearing-a-glasses-people-icon-vector-24025789.jpg" title="man with mustache wearing a glasses people icon" alt="man with mustache wearing a glasses people icon vector image"></noscript></a></li>
+						<li data-src="https://cdn4.vectorstock.com/i/thumb-large/36/48/scientist-man-simple-icon-isolated-vector-21543648.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/scientist-man-simple-icon-isolated-vector-21543648" title="scientist man simple icon isolated vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumb-large/36/48/scientist-man-simple-icon-isolated-vector-21543648.jpg" title="scientist man simple icon isolated" alt="scientist man simple icon isolated vector image"></noscript></a></li>
+						<li data-src="https://cdn4.vectorstock.com/i/thumb-large/43/43/university-icon-set-vector-14054343.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/university-icon-set-vector-14054343" title="university icon set vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumb-large/43/43/university-icon-set-vector-14054343.jpg" title="university icon set" alt="university icon set vector image"></noscript></a></li>
+						<li data-src="https://cdn5.vectorstock.com/i/thumb-large/15/29/graduation-cap-sign-icon-vector-14151529.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/graduation-cap-sign-icon-vector-14151529" title="graduation cap sign icon vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumb-large/15/29/graduation-cap-sign-icon-vector-14151529.jpg" title="graduation cap sign icon" alt="graduation cap sign icon vector image"></noscript></a></li>
+						<li data-src="https://cdn5.vectorstock.com/i/thumb-large/64/99/italian-mafioso-vector-13966499.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/italian-mafioso-vector-13966499" title="italian mafioso vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumb-large/64/99/italian-mafioso-vector-13966499.jpg" title="italian mafioso" alt="italian mafioso vector image"></noscript></a></li>
+						<li data-src="https://cdn4.vectorstock.com/i/thumb-large/69/08/beekeeper-with-protect-hat-icon-men-farmer-face-vector-25496908.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/beekeeper-with-protect-hat-icon-men-farmer-face-vector-25496908" title="beekeeper with protect hat icon men farmer face vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumb-large/69/08/beekeeper-with-protect-hat-icon-men-farmer-face-vector-25496908.jpg" title="beekeeper with protect hat icon men farmer face" alt="beekeeper with protect hat icon men farmer face vector image"></noscript></a></li>
+						<li data-src="https://cdn5.vectorstock.com/i/thumb-large/68/04/farmer-man-with-mustache-wearing-a-hat-people-vector-23876804.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/farmer-man-with-mustache-wearing-a-hat-people-vector-23876804" title="farmer man with mustache wearing a hat people vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumb-large/68/04/farmer-man-with-mustache-wearing-a-hat-people-vector-23876804.jpg" title="farmer man with mustache wearing a hat people" alt="farmer man with mustache wearing a hat people vector image"></noscript></a></li>
+						<li data-src="https://cdn5.vectorstock.com/i/thumb-large/99/24/portrait-of-a-beekeeper-man-wearing-a-mask-vector-20969924.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/portrait-of-a-beekeeper-man-wearing-a-mask-vector-20969924" title="portrait of a beekeeper man wearing a mask vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumb-large/99/24/portrait-of-a-beekeeper-man-wearing-a-mask-vector-20969924.jpg" title="portrait of a beekeeper man wearing a mask" alt="portrait of a beekeeper man wearing a mask vector image"></noscript></a></li>
+						<li data-src="https://cdn1.vectorstock.com/i/thumb-large/19/80/hipster-portrait-isolated-on-white-background-vector-23551980.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/hipster-portrait-isolated-on-white-background-vector-23551980" title="hipster portrait isolated on white background vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumb-large/19/80/hipster-portrait-isolated-on-white-background-vector-23551980.jpg" title="hipster portrait isolated on white background" alt="hipster portrait isolated on white background vector image"></noscript></a></li>
+					</ul>
+				</div>
+				<div class="gallery small more">
+					<ul>
+						<li data-id="23382465" data-title="portrait of man in ivy cap and blue sunglasses" data-src="https://cdn1.vectorstock.com/i/thumbs/24/65/portrait-of-man-in-ivy-cap-and-blue-sunglasses-vector-23382465.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/portrait-of-man-in-ivy-cap-and-blue-sunglasses-vector-23382465" title="portrait of man in ivy cap and blue sunglasses vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/24/65/portrait-of-man-in-ivy-cap-and-blue-sunglasses-vector-23382465.jpg" title="portrait of man in ivy cap and blue sunglasses" alt="portrait of man in ivy cap and blue sunglasses vector image vector image"></noscript></a></li>
+						<li data-id="26200868" data-title="portrait italian man in black vintage hat" data-src="https://cdn4.vectorstock.com/i/thumbs/08/68/portrait-italian-man-in-black-vintage-hat-vector-26200868.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/portrait-italian-man-in-black-vintage-hat-vector-26200868" title="portrait italian man in black vintage hat vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/08/68/portrait-italian-man-in-black-vintage-hat-vector-26200868.jpg" title="portrait italian man in black vintage hat" alt="portrait italian man in black vintage hat vector image vector image"></noscript></a></li>
+						<li data-id="23551977" data-title="mafioso portrait isolated on white background" data-src="https://cdn3.vectorstock.com/i/thumbs/19/77/mafioso-portrait-isolated-on-white-background-vector-23551977.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/mafioso-portrait-isolated-on-white-background-vector-23551977" title="mafioso portrait isolated on white background vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/19/77/mafioso-portrait-isolated-on-white-background-vector-23551977.jpg" title="mafioso portrait isolated on white background" alt="mafioso portrait isolated on white background vector image vector image"></noscript></a></li>
+						<li data-id="21238841" data-title="italian mafioso portrait man with mustache" data-src="https://cdn2.vectorstock.com/i/thumbs/88/41/italian-mafioso-portrait-man-with-mustache-vector-21238841.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/italian-mafioso-portrait-man-with-mustache-vector-21238841" title="italian mafioso portrait man with mustache vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/88/41/italian-mafioso-portrait-man-with-mustache-vector-21238841.jpg" title="italian mafioso portrait man with mustache" alt="italian mafioso portrait man with mustache vector image vector image"></noscript></a></li>
+						<li data-id="25200786" data-title="mafioso man portrait man in ivy cap" data-src="https://cdn2.vectorstock.com/i/thumbs/07/86/mafioso-man-portrait-man-in-ivy-cap-vector-25200786.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/mafioso-man-portrait-man-in-ivy-cap-vector-25200786" title="mafioso man portrait man in ivy cap vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/07/86/mafioso-man-portrait-man-in-ivy-cap-vector-25200786.jpg" title="mafioso man portrait man in ivy cap" alt="mafioso man portrait man in ivy cap vector image vector image"></noscript></a></li>
+						<li data-id="14150685" data-title="fashion silhouette hipster style" data-src="https://cdn1.vectorstock.com/i/thumbs/06/85/fashion-silhouette-hipster-style-vector-14150685.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/fashion-silhouette-hipster-style-vector-14150685" title="fashion silhouette hipster style vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/06/85/fashion-silhouette-hipster-style-vector-14150685.jpg" title="fashion silhouette hipster style" alt="fashion silhouette hipster style vector image vector image"></noscript></a></li>
+						<li data-id="13946597" data-title="hipster face" data-src="https://cdn3.vectorstock.com/i/thumbs/65/97/hipster-face-vector-13946597.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/hipster-face-vector-13946597" title="hipster face vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/65/97/hipster-face-vector-13946597.jpg" title="hipster face" alt="hipster face vector image vector image"></noscript></a></li>
+						<li data-id="13950848" data-title="mexican man with sombrero and mustache" data-src="https://cdn4.vectorstock.com/i/thumbs/08/48/mexican-man-with-sombrero-and-mustache-vector-13950848.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/mexican-man-with-sombrero-and-mustache-vector-13950848" title="mexican man with sombrero and mustache vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/08/48/mexican-man-with-sombrero-and-mustache-vector-13950848.jpg" title="mexican man with sombrero and mustache" alt="mexican man with sombrero and mustache vector image vector image"></noscript></a></li>
+						<li data-id="20969922" data-title="poster wanted with bandit portrait people icon" data-src="https://cdn3.vectorstock.com/i/thumbs/99/22/poster-wanted-with-bandit-portrait-people-icon-vector-20969922.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/poster-wanted-with-bandit-portrait-people-icon-vector-20969922" title="poster wanted with bandit portrait people icon vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/99/22/poster-wanted-with-bandit-portrait-people-icon-vector-20969922.jpg" title="poster wanted with bandit portrait people icon" alt="poster wanted with bandit portrait people icon vector image vector image"></noscript></a></li>
+						<li data-id="13946590" data-title="gentleman icon isolated on white background" data-src="https://cdn1.vectorstock.com/i/thumbs/65/90/gentleman-icon-isolated-on-white-background-vector-13946590.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/gentleman-icon-isolated-on-white-background-vector-13946590" title="gentleman icon isolated on white background vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/65/90/gentleman-icon-isolated-on-white-background-vector-13946590.jpg" title="gentleman icon isolated on white background" alt="gentleman icon isolated on white background vector image vector image"></noscript></a></li>
+						<li data-id="13815476" data-title="mexican men icon" data-src="https://cdn2.vectorstock.com/i/thumbs/54/76/mexican-men-icon-vector-13815476.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/mexican-men-icon-vector-13815476" title="mexican men icon vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/54/76/mexican-men-icon-vector-13815476.jpg" title="mexican men icon" alt="mexican men icon vector image vector image"></noscript></a></li>
+						<li data-id="14007071" data-title="italian mafioso" data-src="https://cdn2.vectorstock.com/i/thumbs/70/71/italian-mafioso-vector-14007071.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/italian-mafioso-vector-14007071" title="italian mafioso vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/70/71/italian-mafioso-vector-14007071.jpg" title="italian mafioso" alt="italian mafioso vector image vector image"></noscript></a></li>
+						<li data-id="13815704" data-title="portrait of bearded man wearing hat and glasses" data-src="https://cdn5.vectorstock.com/i/thumbs/57/04/portrait-of-bearded-man-wearing-hat-and-glasses-vector-13815704.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/portrait-of-bearded-man-wearing-hat-and-glasses-vector-13815704" title="portrait of bearded man wearing hat and glasses vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/57/04/portrait-of-bearded-man-wearing-hat-and-glasses-vector-13815704.jpg" title="portrait of bearded man wearing hat and glasses" alt="portrait of bearded man wearing hat and glasses vector image vector image"></noscript></a></li>
+						<li data-id="13990094" data-title="hipster face" data-src="https://cdn5.vectorstock.com/i/thumbs/00/94/hipster-face-vector-13990094.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/hipster-face-vector-13990094" title="hipster face vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/00/94/hipster-face-vector-13990094.jpg" title="hipster face" alt="hipster face vector image vector image"></noscript></a></li>
+						<li data-id="23491869" data-title="simple portrait of italian mafioso in hat man" data-src="https://cdn5.vectorstock.com/i/thumbs/18/69/simple-portrait-of-italian-mafioso-in-hat-man-vector-23491869.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/simple-portrait-of-italian-mafioso-in-hat-man-vector-23491869" title="simple portrait of italian mafioso in hat man vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/18/69/simple-portrait-of-italian-mafioso-in-hat-man-vector-23491869.jpg" title="simple portrait of italian mafioso in hat man" alt="simple portrait of italian mafioso in hat man vector image vector image"></noscript></a></li>
+						<li data-id="20910461" data-title="portrait of a farmer man in a hat people" data-src="https://cdn2.vectorstock.com/i/thumbs/04/61/portrait-of-a-farmer-man-in-a-hat-people-vector-20910461.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/portrait-of-a-farmer-man-in-a-hat-people-vector-20910461" title="portrait of a farmer man in a hat people vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/04/61/portrait-of-a-farmer-man-in-a-hat-people-vector-20910461.jpg" title="portrait of a farmer man in a hat people" alt="portrait of a farmer man in a hat people vector image vector image"></noscript></a></li>
+						<li data-id="14905803" data-title="italian mafioso face on white background" data-src="https://cdn4.vectorstock.com/i/thumbs/58/03/italian-mafioso-face-on-white-background-vector-14905803.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/italian-mafioso-face-on-white-background-vector-14905803" title="italian mafioso face on white background vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/58/03/italian-mafioso-face-on-white-background-vector-14905803.jpg" title="italian mafioso face on white background" alt="italian mafioso face on white background vector image vector image"></noscript></a></li>
+						<li data-id="13990088" data-title="gentleman icon isolated on white background" data-src="https://cdn4.vectorstock.com/i/thumbs/00/88/gentleman-icon-isolated-on-white-background-vector-13990088.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/gentleman-icon-isolated-on-white-background-vector-13990088" title="gentleman icon isolated on white background vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/00/88/gentleman-icon-isolated-on-white-background-vector-13990088.jpg" title="gentleman icon isolated on white background" alt="gentleman icon isolated on white background vector image vector image"></noscript></a></li>
+						<li data-id="14167097" data-title="italian with a mustache and bow tie" data-src="https://cdn3.vectorstock.com/i/thumbs/70/97/italian-with-a-mustache-and-bow-tie-vector-14167097.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/italian-with-a-mustache-and-bow-tie-vector-14167097" title="italian with a mustache and bow tie vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/70/97/italian-with-a-mustache-and-bow-tie-vector-14167097.jpg" title="italian with a mustache and bow tie" alt="italian with a mustache and bow tie vector image vector image"></noscript></a></li>
+						<li data-id="24760639" data-title="man in winter blue hat glasses and with beard" data-src="https://cdn5.vectorstock.com/i/thumbs/06/39/man-in-winter-blue-hat-glasses-and-with-beard-vector-24760639.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/man-in-winter-blue-hat-glasses-and-with-beard-vector-24760639" title="man in winter blue hat glasses and with beard vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/06/39/man-in-winter-blue-hat-glasses-and-with-beard-vector-24760639.jpg" title="man in winter blue hat glasses and with beard" alt="man in winter blue hat glasses and with beard vector image vector image"></noscript></a></li>
+						<li class="more"><div><a href="https://www.vectorstock.com/royalty-free-vectors/vectors-by_Greens87" rel="nofollow"><span class="lrg">More Images…</span><span class="sml">More</span></a></div></li>
+					</ul>
+				</div>
+			</div>
+			<div id="group-keywords" class="group">
+				<h6><span class="icon"></span><strong>Related Searches</strong></h6>
+				<ul>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/professor-vectors">Professor</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/face-vectors">Face</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/graduation-vectors">Graduation</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/graduate-vectors">Graduate</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/icon-vectors">Icon</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/hat-vectors">Hat</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/education-vectors">Education</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/man-vectors">Man</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/flat-vectors">Flat</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/university-vectors">University</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/male-vectors">Male</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/college-vectors">College</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/web-vectors">Web</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/person-vectors">Person</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/sign-vectors">Sign</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/cartoon-vectors">Cartoon</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/design-vectors">Design</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/school-vectors">School</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/student-vectors">Student</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/style-vectors">Style</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/people-vectors">People</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/knowledge-vectors">Knowledge</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/degree-vectors">Degree</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/learning-vectors">Learning</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/achievement-vectors">Achievement</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/head-vectors">Head</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/study-vectors">Study</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/character-vectors">Character</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/symbol-vectors">Symbol</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/cap-vectors">Cap</a></li>
+				</ul>
+			</div>
+		</section>
+	</article>
+
+	<!-- Footer -->
+	<footer>
+
+		<div>
+		<div class="column c1">
+			<nav class="company">
+				<h4>VectorStock</h4>
+				<ul>
+					<li><a href="https://www.vectorstock.com/" title="Home">Home</a></li>
+					<li class="sel"><a href="https://www.vectorstock.com/free-vectors" title="Free Vectors">Free Vectors</a></li>
+					<li class="sel"><a href="https://www.vectorstock.com/royalty-free-vectors" title="All Royalty-Free Vectors">All Vectors</a></li>
+				</ul>
+				<ul>
+					<li><a href="https://www.vectorstock.com/what-is-a-vector" title="What is a Vector?">What is a Vector?</a></li>
+				</ul>
+				<ul>
+					<li class="sel"><a href="https://www.vectorstock.com/faq" title="Frequently Asked Questions"><span class="long">Frequently Asked Questions</span><span class="short">FAQs</span></a></li>
+					<li><a href="https://www.vectorstock.com/faq/members/terms-of-use" title="Terms &amp; Conditions">Terms &amp; Conditions</a></li>
+					<li class="sel"><a href="https://www.vectorstock.com/contact" title="Contact Us">Contact Us</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="column c2">
+			<nav class="account">
+					<h4><span class="title">Account</span><span class="icon"></span></h4>
+					<ul>
+						<li><a href="https://www.vectorstock.com/signup" title="Join Now">Join Now</a></li>
+						<li><a href="https://www.vectorstock.com/account/sell-vectors" title="Become a VectorStock Contributor">Contributor Sign Up</a></li>
+						<li><a href="https://www.vectorstock.com/faq/artists/why-sell-at-vectorstock" title="Contributor FAQ">Contributor FAQ</a></li>
+					</ul>
+			</nav>
+		</div>
+		<div class="column c3">
+			<nav class="social">
+				<h4>Social</h4>
+				<ul>
+					<li class="facebook sel"><a href="http://www.facebook.com/VectorStock" target="_blank"><span class="title">Facebook</span><span class="icon"></span></a></li>
+					<li class="pinterest sel"><a href="http://pinterest.com/vectorstock/" target="_blank"><span class="title">Pinterest</span><span class="icon"></span></a></li>
+					<li class="twitter sel"><a href="https://twitter.com/VectorStock" target="_blank"><span class="title">Twitter</span><span class="icon"></span></a></li>
+				</ul>
+			</nav>
+			<div class="signoff">
+				<h5><a href="https://www.vectorstock.com/" title="VectorStock®">VectorStock®</a></h5>
+				<p>VectorStock and the VectorStock logo are registered trademarks of VectorStock Media.<br>
+				© 2019. <span>All Rights Reserved.</span></p>
+			</div>
+		</div>
+	</div></footer>
+
+
+	<script src="./icon4_files/f.txt"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"02e09611df","applicationID":"156179534","transactionName":"ZV0ENRYCC0RYAkVbDVwXJRQXFwpaFhNeSwNeTB9MAhEAUhQXVFEWXUpJFw0GEg==","queueTime":0,"applicationTime":38,"atts":"SRoHQ14YGEo=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+
+</body></html>
